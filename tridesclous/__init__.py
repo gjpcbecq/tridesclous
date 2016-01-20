@@ -11,10 +11,16 @@ from .spikesorter import SpikeSorter
 
 from .mpl_plot import *
 
+
+"""
 try:
     from .gui import *
+except Exception as e: 
+    print('.?')
+    print(e)
 except ImportError:
+    print('.')
     import logging
     logging.warning('INteractive GUI not availble')
     pass
-
+"""

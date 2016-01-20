@@ -13,11 +13,13 @@ from .tools import median_mad
 
 from collections import OrderedDict
 
+"""
 try:
     from pyqtgraph.Qt import QtCore, QtGui
     HAVE_QT = True
 except ImportError:
     HAVE_QT = False
+"""
 
 class SpikeSorter:
     def __init__(self, dataio = None, **kargs):
